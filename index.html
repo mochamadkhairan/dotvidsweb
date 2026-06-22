@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DotVids — Creative Digital Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="dotCanvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="logo">
+    <span class="logo-dot"></span>
+    DotVids
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Layanan</a></li>
+    <li><a href="#why">Tentang</a></li>
+    <li><a href="#process">Proses</a></li>
+    <li><a href="./artikel.html">Artikel</a></li>
+    <li><a href="#testimonials">Testimoni</a></li>
+    <li><a href="#cta" class="nav-cta">Konsultasi Gratis</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Creative Digital Agency · Bandung
+        </div>
+        <h1>
+          Satu Pintu untuk<br>
+          <span class="gradient-text">Web & Video</span><br>
+          Bisnis Anda
+        </h1>
+        <p class="hero-sub">
+          DotVids hadir sebagai solusi digital terintegrasi — dari website profesional hingga konten video sinematik, semua ditangani biar kamu fokus jualan.
+        </p>
+        <div class="btn-group">
+          <a href="https://wa.me/6281563874093" class="btn-primary" target="_blank">
+            💬 Konsultasi Gratis
+          </a>
+          <a href="#services" class="btn-outline">
+            Lihat Layanan →
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-wrap">
+          <div class="hero-main-card">
+            <div class="card-label">— Layanan Unggulan DotVids</div>
+            <div class="services-list">
+              <div class="svc-item">
+                <div class="svc-icon violet">🌐</div>
+                <div>
+                  <div class="svc-name">Website Development</div>
+                  <div class="svc-desc">Statis · Dinamis · Maintenance</div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-icon cyan">🎬</div>
+                <div>
+                  <div class="svc-name">Video Editing</div>
+                  <div class="svc-desc">Sinematik · Promosi · Reels</div>
+                </div>
+              </div>
+              <div class="svc-item">
+                <div class="svc-icon indigo">✨</div>
+                <div>
+                  <div class="svc-name">Digital Branding</div>
+                  <div class="svc-desc">Identitas · Konten · Strategi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-badge top-right">
+            <span>⚡</span>
+            <span>Fast Delivery</span>
+          </div>
+
+          <div class="float-badge bot-left">
+            <span style="color:#25D366;">✓</span>
+            <span>10 Klien Pertama — Gratis Konsul</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Klien Puas</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Layanan Terintegrasi</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">Fast</div>
+        <div class="stat-label">Respon & Delivery</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Support Responsif</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <span class="section-eye">Layanan Kami</span>
+        <h2 class="section-title">Semua yang Bisnis Kamu Butuhkan, <span class="gradient-text">di Satu Tempat</span></h2>
+      </div>
+      <div>
+        <p class="section-sub">Berhenti pusing cari vendor satu-satu. DotVids handle semuanya — web, video, dan strategi digital — dengan standar premium.</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-number">01</div>
+        <div class="service-icon-wrap">🌐</div>
+        <h3>Website Statis</h3>
+        <p>Landing page dan company profile yang loading cepat, responsif di semua device, dan tampil profesional. Ideal untuk brand yang baru mulai.</p>
+        <div class="service-tags">
+          <span class="tag">Landing Page</span>
+          <span class="tag">Company Profile</span>
+          <span class="tag">Responsif</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">02</div>
+        <div class="service-icon-wrap">⚙️</div>
+        <h3>Website Dinamis</h3>
+        <p>Website dengan fitur interaktif, sistem manajemen konten, dan database. Cocok untuk bisnis yang butuh update produk atau artikel rutin.</p>
+        <div class="service-tags">
+          <span class="tag">CMS</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag cyan-tag">Full-Stack</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">03</div>
+        <div class="service-icon-wrap">🛡️</div>
+        <h3>Maintenance Website</h3>
+        <p>Website kamu terjaga keamanan dan performanya. Update rutin, bug fix, dan optimasi SEO — biar kamu fokus bisnis, teknis biar kami.</p>
+        <div class="service-tags">
+          <span class="tag">Update Rutin</span>
+          <span class="tag">Security</span>
+          <span class="tag cyan-tag">SEO Boost</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">04</div>
+        <div class="service-icon-wrap">🎬</div>
+        <h3>Video Editing Sinematik</h3>
+        <p>Edit video dengan sentuhan sinematik yang cocok untuk promosi, company profile video, atau konten brand awareness yang berkesan.</p>
+        <div class="service-tags">
+          <span class="tag">Sinematik</span>
+          <span class="tag">Color Grading</span>
+          <span class="tag">Motion Graphics</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">05</div>
+        <div class="service-icon-wrap">📱</div>
+        <h3>Video Konten Sosmed</h3>
+        <p>Reels, TikTok, dan YouTube Shorts yang estetik dan scroll-stopping. Konten yang dirancang sesuai algoritma dan perilaku audiens modern.</p>
+        <div class="service-tags">
+          <span class="tag">Reels</span>
+          <span class="tag">TikTok</span>
+          <span class="tag cyan-tag">Viral-Ready</span>
+        </div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-number">06</div>
+        <div class="service-icon-wrap">🎯</div>
+        <h3>Digital Branding Strategy</h3>
+        <p>Konsultasi dan perencanaan strategi digital menyeluruh. Dari identitas visual, content pillars, hingga customer journey yang terstruktur.</p>
+        <div class="service-tags">
+          <span class="tag">Konsultasi</span>
+          <span class="tag">Content Plan</span>
+          <span class="tag cyan-tag">Gratis!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <span class="section-eye reveal">Kenapa DotVids?</span>
+    <h2 class="section-title reveal">Bukan Sekadar Vendor,<br><span class="gradient-text">Partner Digital Kamu</span></h2>
+
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item reveal">
+          <div class="why-num">01</div>
+          <div>
+            <div class="why-title">Satset — Satu Pintu, Beres</div>
+            <p class="why-desc">Gak perlu cari vendor web di sini, editor video di sana. Semua kebutuhan digital kamu ditangani DotVids dalam satu ekosistem yang terhubung.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-num">02</div>
+          <div>
+            <div class="why-title">Estetika Modern, Bukan Template</div>
+            <p class="why-desc">Desain yang dibuat khusus untuk bisnis kamu — bukan hasil generate template. Setiap pixel dipikirkan matang untuk kesan pertama yang kuat.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-num">03</div>
+          <div>
+            <div class="why-title">Paham Behavior Audiens</div>
+            <p class="why-desc">Tim DotVids up-to-date soal tren platform digital. Konten video dan web yang kami buat disesuaikan dengan cara kerja algoritma dan psikologi audiens.</p>
+          </div>
+        </div>
+
+        <div class="why-item reveal">
+          <div class="why-num">04</div>
+          <div>
+            <div class="why-title">Support yang Responsif</div>
+            <p class="why-desc">Ada pertanyaan? Butuh revisi? Kami bisa dihubungi kapan saja via WhatsApp. Gak dibiarkan gantung, gak perlu nunggu berhari-hari.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mockup-wrap reveal">
+        <div class="mockup-browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="browser-url">dotvids.vercel.app</div>
+          </div>
+          <div class="browser-body">
+            <div class="mock-header"></div>
+            <div class="mock-lines">
+              <div class="mock-line full"></div>
+              <div class="mock-line med"></div>
+              <div class="mock-line short"></div>
+            </div>
+            <div class="mock-cards">
+              <div class="mock-card">🌐</div>
+              <div class="mock-card" style="background:rgba(34,211,238,0.08);border-color:rgba(34,211,238,0.15)">🎬</div>
+              <div class="mock-card" style="background:rgba(99,102,241,0.1);border-color:rgba(99,102,241,0.2)">✨</div>
+              <div class="mock-card" style="background:rgba(124,58,237,0.07)">🎯</div>
+            </div>
+            <div style="margin-top:16px;">
+              <div class="mock-lines">
+                <div class="mock-line med"></div>
+                <div class="mock-line full"></div>
+                <div class="mock-line short"></div>
+              </div>
+            </div>
+            <div style="margin-top:12px; height:36px; border-radius:8px; background:linear-gradient(90deg,var(--violet),var(--cyan)); opacity:0.7;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-eye">Cara Kerja Kami</span>
+      <h2 class="section-title">Dari Konsul ke Launch,<br><span class="gradient-text">Transparan & Terstruktur</span></h2>
+      <p class="section-sub">Prosesnya jelas, komunikasinya terbuka. Kamu selalu tahu proyek ada di tahap mana.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-circle">01</div>
+        <div class="step-title">Konsultasi Gratis</div>
+        <p class="step-desc">Ceritain kebutuhan bisnis kamu. Kita diskusikan solusi terbaik tanpa pressure sama sekali.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-circle">02</div>
+        <div class="step-title">Proposal & Deal</div>
+        <p class="step-desc">Kami siapkan proposal detail — scope, timeline, dan harga yang transparan. Setuju, kita mulai.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-circle">03</div>
+        <div class="step-title">Eksekusi & Revisi</div>
+        <p class="step-desc">Tim kami bekerja. Update progres rutin, dan revisi diterima sampai kamu puas dengan hasilnya.</p>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="step-circle">04</div>
+        <div class="step-title">Launch & Support</div>
+        <p class="step-desc">Project live! Kami tetap standby untuk support pasca-launch. Bisnis kamu gak dibiarkan sendirian.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header reveal">
+      <span class="section-eye">Testimoni Klien</span>
+      <h2 class="section-title">Kata Mereka tentang <span class="gradient-text">DotVids</span></h2>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testi-text">"Website bisnis kami kini terlihat jauh lebih profesional dan lebih mudah digunakan pelanggan. Penjualan online meningkat signifikan sejak pakai DotVids."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#7C3AED,#22D3EE);color:#fff;">RW</div>
+          <div>
+            <div class="author-name">Rahmat W.</div>
+            <div class="author-role">Owner UMKM Kuliner, Bandung</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testi-text">"Video promosi yang dibuat DotVids beneran beda levelnya. Estetiknya top, dan engagement kita di Instagram langsung naik. Recommended banget!"</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#06B6D4,#3B82F6);color:#fff;">SA</div>
+          <div>
+            <div class="author-name">Sari A.</div>
+            <div class="author-role">Founder Startup Fashion, Jakarta</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testi-text">"Satu hal yang bikin nyaman: komunikasinya responsif banget. Progress selalu diupdate, revisi dilayani dengan baik. Kerja bareng DotVids itu tenang."</p>
+        <div class="testi-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;">MF</div>
+          <div>
+            <div class="author-name">M. Fadhil</div>
+            <div class="author-role">Ketua Komunitas Kreatif, Bandung</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section id="platforms">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:0;">
+      <span class="section-eye">Temukan Kami Di</span>
+      <h2 class="section-title">Ekosistem Digital <span class="gradient-text">DotVids</span></h2>
+      <p class="section-sub" style="margin:0 auto;">Kami ada di mana kamu biasa scroll. Pilih platform yang paling nyaman buat kamu.</p>
+    </div>
+
+    <div class="platform-grid">
+      <div class="platform-card reveal">
+        <span class="platform-emoji">🎵</span>
+        <div class="platform-name">TikTok</div>
+        <p class="platform-role">Konten edukatif & hiburan seputar dunia digital. Reach & awareness utama.</p>
+        <span class="platform-handle">@ofcdotvids</span>
+      </div>
+
+      <div class="platform-card reveal">
+        <span class="platform-emoji">📸</span>
+        <div class="platform-name">Instagram</div>
+        <p class="platform-role">Galeri portofolio visual. Validasi brand & membangun desire calon klien.</p>
+        <span class="platform-handle">@dotvids.studio</span>
+      </div>
+
+      <div class="platform-card reveal">
+        <span class="platform-emoji">💬</span>
+        <div class="platform-name">WhatsApp</div>
+        <p class="platform-role">Kanal diskusi langsung. Tanya, konsultasi, dan deal proyek tanpa ribet.</p>
+        <span class="platform-handle">081563874093</span>
+      </div>
+
+      <div class="platform-card reveal">
+        <span class="platform-emoji">🌐</span>
+        <div class="platform-name">Website</div>
+        <p class="platform-role">Wajah digital resmi. Profesional, terpercaya, dan mudah ditemukan di Google.</p>
+        <span class="platform-handle">dotvids.vercel.app</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-eye">Mulai Sekarang</span>
+      <h2 class="section-title">Bisnis Kamu Layak Tampil <span class="gradient-text">Lebih Baik</span></h2>
+      <p class="section-sub">Slot konsultasi gratis terbatas hanya untuk 10 bisnis pertama. Jangan sampai ketinggalan — mulai perjalanan digitalmu bersama DotVids hari ini.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/6281563874093?text=Halo%20DotVids%2C%20saya%20ingin%20konsultasi%20gratis" class="btn-wa" target="_blank">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat di WhatsApp
+        </a>
+        <a href="https://www.instagram.com/dotvids.studio" class="btn-outline" target="_blank">
+          📸 Lihat Portfolio
+        </a>
+      </div>
+      <div class="cta-trust">
+        <div class="trust-item"><span class="trust-icon">✓</span> Gratis Konsultasi</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Tanpa Commitment</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Respon Cepat</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Harga Transparan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" style="margin-bottom:14px;display:inline-flex;">
+          <span class="logo-dot"></span> DotVids
+        </a>
+        <p class="footer-tagline">
+          Creative Digital Agency yang membantu UMKM, startup, dan brand kreatif tampil lebih profesional di dunia digital — lewat website dan video yang estetik.
+        </p>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@ofcdotvids" class="social-link" target="_blank" title="TikTok">🎵</a>
+          <a href="https://www.instagram.com/dotvids.studio" class="social-link" target="_blank" title="Instagram">📸</a>
+          <a href="https://wa.me/6281563874093" class="social-link" target="_blank" title="WhatsApp">💬</a>
+          <a href="https://dotvids.vercel.app" class="social-link" target="_blank" title="Website">🌐</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="#services">Website Statis</a></li>
+          <li><a href="#services">Website Dinamis</a></li>
+          <li><a href="#services">Maintenance Web</a></li>
+          <li><a href="#services">Video Editing</a></li>
+          <li><a href="#services">Konten Sosmed</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#why">Kenapa DotVids</a></li>
+          <li><a href="#process">Cara Kerja</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="#platforms">Platform Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="https://wa.me/6281563874093">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/dotvids.studio">DM Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@ofcdotvids">TikTok</a></li>
+          <li><a href="https://dotvids.vercel.app">dotvids.vercel.app</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <span>DotVids</span>. Creative Digital Agency · Bandung, Indonesia.</p>
+      <p class="footer-copy" style="font-size:0.78rem;">Dibuat dengan ❤️ oleh Tim DotVids</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
